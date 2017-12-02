@@ -1,0 +1,22 @@
+﻿@using MvcTest9.Domain.Entities
+@model IEnumerable<tvCustomer>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetCustomer</title>
+</head>
+<body>
+    <div> 
+        @foreach (var p in Model)
+        {
+            <h3>@p.strName</h3>
+        }
+    </div>
+</body>
+</html>
